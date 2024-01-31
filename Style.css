@@ -1,0 +1,83 @@
+
+body {
+    font-family: "Outfit", sans-serif;
+    text-align: center;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+button:active {
+    color: brown;
+    text-decoration: underline;
+}
+
+button:hover {
+    color: brown;
+    text-decoration: underline;
+} 
+
+button {
+    background-color: rgb(255, 255, 255); 
+    border: none;
+    padding: 10px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    color: chocolate ;
+    
+  }
+
+  #deleteBlog {
+    background-color: rgb(255, 255, 255); 
+    border: none;
+    padding: 1px 1px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    color: rgb(0, 0, 0) ;
+  }
+
+  .content {
+    white-space: pre-line;
+  }
+
+  .date {
+    color: brown;
+    /* text-align: left; */
+  }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-areas:
+        "header header header"
+        "menubar menubar menubar"
+        "body body body";
+    margin: 0;
+}
+
+.grid-column {
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+#a {
+    grid-area: header;
+}
+
+#b {
+    grid-area: menubar;
+}
+
+#c {
+    grid-area: body;
+}
+
+
